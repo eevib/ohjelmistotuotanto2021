@@ -8,7 +8,7 @@ public class Kauppa {
     private GeneraattoriRajapinta viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa(VarastoRajapinta varasto, Viitegeneraattori generaattori, PankkiRajapinta pankki) {
+    public Kauppa(VarastoRajapinta varasto, PankkiRajapinta pankki, Viitegeneraattori generaattori) {
         this.varasto = varasto;
         this.pankki = pankki;
         this.viitegeneraattori = generaattori;
