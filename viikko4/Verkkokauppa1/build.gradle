@@ -1,0 +1,27 @@
+plugins {
+    id  'application'
+    id 'jacoco'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    def springVersion = '5.2.9.RELEASE'
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.google.guava:guava:29.0-jre'
+    compile group: 'org.springframework', name: 'spring-core', version: springVersion
+    compile group: 'org.springframework', name: 'spring-context', version: springVersion
+    compile group: 'org.springframework', name: 'spring-context-support', version: springVersion
+    compile group: 'org.springframework', name: 'spring-beans', version: springVersion
+    testCompile 'org.mockito:mockito-core:3.1.0'
+}
+
+application {
+    mainClass = 'ohtu.Main'
+}
+
+run {
+    standardInput = System.in
+}
